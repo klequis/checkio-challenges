@@ -1,11 +1,15 @@
 // import { green } from 'logger'
-import { isString } from './isString'
+import { isString } from "./isString";
 
-type LastType = string | string[]
+// type LastType = string | any[];
 
-export const last = (data: LastType): LastType => {
-  if (isString(data)) {
-    return data.slice(-1)
-  }
-  return data.slice(-1)[0]
+interface Ext {
+  slice: any;
 }
+
+export const last = <T extends Ext>(data: T): T | T[] => {
+  if (isString(data)) {
+    return data.slice(-1);
+  }
+  return data.slice(-1)[0];
+};

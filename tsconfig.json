@@ -6,6 +6,10 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "outDir": "out"
+    "outDir": "out",
+    "baseUrl": "./"
+    // "paths": {
+    //   "./lib/*": ["./lib/*"]
+    // }
   }
 }
