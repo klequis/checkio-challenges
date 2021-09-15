@@ -4,17 +4,8 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "start-1": "ts-node-dev --respawn index.ts",
-    "start-2": "ts-node -r tsconfig-paths/register index.ts",
-    "xxxx": "ts-node-dev -T --respawn -- node_modules/mocha/bin/mocha -r ts-node/register **/*.ts",
     "start": "ts-node-dev --respawn -r  tsconfig-paths/register index.ts",
-    "mocha2": "ts-mocha --paths **/*.ts -w --watch-extensions ts",
-    "test-old": "ts-node-dev -T --respawn node_modules/mocha/bin/mocha **/*.test.ts",
-    "test-worked-no-watch": "mocha -r ts-node/register -r tsconfig-paths/register **/*.test.ts",
-    "test2": "mocha -r ts-node-dev tsconfig-paths/register **/*.test.ts",
-    "test1": "mocha -r ts-node/register -r tsconfig-paths/register **/*.ts",
-    "test3": "ts-node-dev -T --respawn node_modules/mocha/bin/mocha **/*.ts",
-    "test4": "ts-node-dev -T --respawn -- node_modules/mocha/bin/mocha -r ts-node/register **/*.ts"
+    "test": "ts-mocha --paths **/*.ts -w --watch-extensions ts"
   },
   "keywords": [],
   "author": "",
